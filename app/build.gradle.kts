@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("jacoco")
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 tasks.withType<Test> {
     extensions.configure(JacocoTaskExtension::class) {
@@ -115,4 +117,15 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+    //HILT
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }

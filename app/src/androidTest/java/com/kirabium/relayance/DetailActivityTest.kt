@@ -32,7 +32,7 @@ class DetailActivityTest {
         composeTestRule.activityRule.scenario.onActivity { activity ->
             activity.startActivity(intent)
         }
-        val dummyData = DummyData
+        val dummyData = DummyData()
         val alice = dummyData.customers.find { it.id == customerId }!!
 
         // Vérifier que les informations sont bien affichées sur l'écran

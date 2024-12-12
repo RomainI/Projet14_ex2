@@ -1,4 +1,4 @@
-package com.kirabium.relayance.ui.detail
+package com.kirabium.relayance.ui.activity
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

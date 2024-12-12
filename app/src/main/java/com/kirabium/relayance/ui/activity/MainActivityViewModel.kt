@@ -1,4 +1,4 @@
-package com.kirabium.relayance.ui.mainActivity
+package com.kirabium.relayance.ui.activity
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

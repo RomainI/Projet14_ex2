@@ -1,4 +1,4 @@
-package com.kirabium.relayance.ui.addCustomer
+package com.kirabium.relayance.ui.activity
 
 import androidx.lifecycle.ViewModel
 import com.kirabium.relayance.domain.model.Customer

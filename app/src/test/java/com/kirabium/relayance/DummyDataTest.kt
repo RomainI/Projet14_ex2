@@ -15,7 +15,7 @@ class DummyDataTest {
         val calendar = Calendar.getInstance()
         calendar.add(Calendar.MONTH, -3)
         val expectedDate = calendar.time
-        val dummyData = DummyData
+        val dummyData = DummyData()
         // Act
         val testDate = dummyData.generateDate(3)
 
